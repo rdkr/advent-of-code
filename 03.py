@@ -41,4 +41,4 @@ intersects = set(a) & set(b) ^ set([(0, 0)])
 print(min([abs(i[0]) + abs(i[1]) for i in intersects]))
 
 a_steps, b_steps = steps(a, intersects), steps(b, intersects)
-print(min([a_steps[p] + b_steps[p] for p in intersects]))
+print(min([a_steps[i] + b_steps[i] for i in intersects]))
